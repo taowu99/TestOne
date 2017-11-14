@@ -1,0 +1,47 @@
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%Cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%Unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+"Arrow.ani"
+"Help.cur"
+"AppStarting.ani"
+"Wait.ani"
+"Cross.cur"
+"IBeam.cur"
+"NO.cur"
+"SizeNS.ani"
+"SizeWE.ani"
+"SizeNWSE.ani"
+"SizeNESW.ani"
+"SizeAll.cur"
+"Hand.cur"
+
+[Strings]
+CUR_DIR         = "Cursors\DaTiK-K"
+SCHEME_NAME     = "DaTiK-K"
+pointer		= "Arrow.ani"
+help		= "Help.cur"
+work		= "AppStarting.ani"
+busy		= "Wait.ani"
+cross		= "Cross.cur"
+text		= "IBeam.cur"
+unavailiable	= "NO.cur"
+vert		= "SizeNS.ani"
+horz		= "SizeWE.ani"
+dgn1		= "SizeNWSE.ani"
+dgn2		= "SizeNESW.ani"
+move		= "SizeAll.cur"
+link		= "Hand.cur"

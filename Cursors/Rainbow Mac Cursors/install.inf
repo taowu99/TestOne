@@ -1,0 +1,58 @@
+; "Rainbow 'Mac' Cursors" installation file
+; by pkuwyc (pkuwyc@gmail.com)
+; My Homepage: http://spaces.msn.com/wangyinchao
+; My Webpage @ DA: http://pkuwyc.deviantart.com
+; How to install: right-click on this INF file and choose "install"
+; Have FUN!! :-)
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%Cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%Unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+"Cursor.ani"
+"Help.ani"
+"Working.ani"
+"Busy.ani"
+"Cross.ani"
+"Beam.ani"
+"Pen.ani"
+"Unavailable.ani"
+"Size Horz.ani"
+"Size Vert.ani"
+"Resize Right.ani"
+"Resize Left.ani"
+"Resize All.ani"
+"Alternate.ani"
+"Hand.ani"
+
+[Strings]
+CUR_DIR         = "Cursors\pkuwyc\Rainbow Mac"
+SCHEME_NAME     = "Rainbow Mac"
+pointer		= "Cursor.ani"
+help		= "Help.ani"
+work		= "Working.ani"
+busy		= "Busy.ani"
+cross		= "Cross.ani"
+text		= "Beam.ani"
+hand		= "Pen.ani"
+unavailiable	= "Unavailable.ani"
+vert		= "Size Horz.ani"
+horz		= "Size Vert.ani"
+dgn1		= "Resize Right.ani"
+dgn2		= "Resize Left.ani"
+move		= "Resize All.ani"
+alternate	= "Alternate.ani"
+link		= "Hand.ani"

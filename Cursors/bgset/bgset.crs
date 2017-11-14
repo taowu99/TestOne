@@ -1,0 +1,12 @@
+﻿[Arrow]
+Path=Blue Glass Normal.cur
+
+[Hand]
+Path=Blue Glass Link.ani
+
+[IBeam]
+Path=Blue Glass Text.ani
+
+[Wait]
+Path=Blue Glass Wait.ani
+

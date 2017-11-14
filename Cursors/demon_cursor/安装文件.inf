@@ -1,0 +1,51 @@
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%Cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%Unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+"arrow.cur"
+"wenhao.cur"
+"wait_big.ani"
+"cross.cur"
+"hand_link.cur"
+"move.cur"
+"no.cur"
+"pen.cur"
+"size1.cur"
+"size2.cur"
+"size3.cur"
+"size4.cur"
+"text.cur"
+"up.cur"
+"wait.cur"
+
+[Strings]
+CUR_DIR         = "Cursors\Demon"
+SCHEME_NAME     = "Demonk"
+pointer		= "arrow.cur"
+help		= "wenhao.cur"
+work		= "wait_big.ani"
+busy		= "wait_big.ani"
+cross		= "cross.cur"
+text		= "text.cur"
+hand		= "pen.cur"
+unavailiable	= "no.cur"
+vert		= "Size4.cur"
+horz		= "Size3.cur"
+dgn1		= "size2.cur"
+dgn2		= "size1.cur"
+move		= "move.cur"
+alternate	= "up.cur"
+link		= "hand_link.cur"

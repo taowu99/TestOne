@@ -1,0 +1,45 @@
+﻿[Arrow]
+Path=Whitegem.cur
+
+[Hand]
+Path=Whitegem Link.cur
+
+[AppStarting]
+Path=Whitegem Wait 1.ani
+
+[NWPen]
+Path=Whitegem Handwriting.cur
+
+[Wait]
+Path=Whitegem Working.ani
+
+[Help]
+Path=Whitegem Help 1.cur
+
+[Crosshair]
+Path=Whitegem Precision 1.cur
+
+[IBeam]
+Path=Whitegem Text 1.cur
+
+[No]
+Path=Whitegem Unavailable 1.cur
+
+[SizeNS]
+Path=Whitegem Resize NS.cur
+
+[SizeWE]
+Path=Whitegem Resize WE.cur
+
+[SizeNESW]
+Path=Whitegem Resize D2.cur
+
+[SizeNWSE]
+Path=Whitegem Resize D1.cur
+
+[SizeAll]
+Path=Whitegem Move 1.cur
+
+[UpArrow]
+Path=Whitegem Alternate 1.cur
+

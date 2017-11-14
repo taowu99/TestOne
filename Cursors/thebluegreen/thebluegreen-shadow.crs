@@ -1,0 +1,45 @@
+﻿[Arrow]
+Path=Blue-Grren Normal.cur
+
+[UpArrow]
+Path=Blue-Green Alternate Select.cur
+
+[Wait]
+Path=Blue-Green Busy.ani
+
+[SizeNWSE]
+Path=Blue-Green \ Diagonal Resize.ani
+
+[SizeNESW]
+Path=Blue-Green / Diagonal Resize.ani
+
+[NWPen]
+Path=Blue-Green Handwriting.cur
+
+[Help]
+Path=Blue-Green Help.ani
+
+[SizeWE]
+Path=Blue-Green Horizontal Resize.ani
+
+[SizeNS]
+Path=Blue-Green Vertical Resize.ani
+
+[Hand]
+Path=Blue-Green Link.ani
+
+[SizeAll]
+Path=Blue-Green Move.ani
+
+[Crosshair]
+Path=Blue-Green Precision.cur
+
+[IBeam]
+Path=Blue-Green Text.cur
+
+[No]
+Path=Blue-Green Unaivable.cur
+
+[AppStarting]
+Path=Blue-Green Working in Background.ani
+

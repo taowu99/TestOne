@@ -1,0 +1,54 @@
+; Contrast cursors for Windows XP by Jan 15th
+; Win 2000/XP Alphablended Cursor Scheme installation file.
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+Normal Select.cur
+Help Select.cur
+Working In Backround.ani
+Busy.ani
+Text Select.cur
+Unavailable.cur
+Size Horz.cur
+Size Vert.cur
+Resize Right.cur
+Resize Left.cur
+Resize All.cur
+Hand.cur
+Cross.cur
+Handwriting.cur
+Alternate.cur
+
+[Strings]
+CUR_DIR       = "Cursors\Aero"
+SCHEME_NAME   = "Aero"
+pointer       = "Normal Select.cur"
+help          = "Help Select.cur"
+work          = "Working In Backround.ani"
+busy          = "Busy.ani"
+text          = "Text Select.cur"
+unavailiable  = "Unavailable.cur"
+vert          = "Size Horz.cur"
+horz          = "Size Vert.cur"
+dgn1          = "Resize Right.cur"
+dgn2          = "Resize Left.cur"
+move          = "Resize All.cur"
+link          = "Hand.cur"
+cross         = "Cross.cur"
+hand          = "Handwriting.cur"
+alternate     = "Alternate.cur"

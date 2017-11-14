@@ -1,0 +1,15 @@
+﻿[Arrow]
+Path=Red Normal.cur
+
+[AppStarting]
+Path=Red Working.cur
+
+[Help]
+Path=Red Help .cur
+
+[Hand]
+Path=Red Link.cur
+
+[Wait]
+Path=Red Busy.cur
+

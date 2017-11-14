@@ -1,0 +1,15 @@
+Design By : Koka
+Homepage : http://www.desone.net
+E-mail : maxmtv@126.com
+MSN : maxmtv@msn.com
+QQ : 6287843
+
+Korean e-mail : maxmtv@hanmail.net
+
+修改了《文本》指针在黑色背景情况下无法识别的问题。
+
+添加了《忙》指针的动画
+
+--------------------------------------
+
+感谢RoyalPeggy制作安装文件！

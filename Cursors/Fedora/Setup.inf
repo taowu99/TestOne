@@ -1,0 +1,52 @@
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%Cross%,%10%\%CUR_DIR%\%Text%,%10%\%CUR_DIR%\%Hand%,%10%\%CUR_DIR%\%Unavailiable%,%10%\%CUR_DIR%\%Vert%,%10%\%CUR_DIR%\%Horz%,%10%\%CUR_DIR%\%Dgn1%,%10%\%CUR_DIR%\%Dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%"
+
+; -- Common Information
+
+[Scheme.Cur]
+"Arrow.cur"
+"Button.cur"
+"Help.cur"
+"AppStarting.cur"
+"Wait.ani"
+"Cross.cur"
+"IBeam.cur"
+"Handwriting.cur"
+"NO.cur"
+"SizeNS.cur"
+"SizeWE.cur"
+"SizeNWSE.cur"
+"SizeNESW.cur"
+"SizeAll.cur"
+"UpArrow.cur"
+"Hand.cur"
+
+[Strings]
+CUR_DIR         = "Cursors\Fedora"
+SCHEME_NAME     = "Fedora"
+Pointer		= "Arrow.cur"
+Help		= "Help.cur"
+Work		= "AppStarting.cur"
+Busy		= "Wait.ani"
+Cross		= "Cross.cur"
+Text		= "IBeam.cur"
+Hand		= "Handwriting.cur"
+Unavailiable	= "NO.cur"
+Vert		= "SizeNS.cur"
+Horz		= "SizeWE.cur"
+Dgn1		= "SizeNWSE.cur"
+Dgn2		= "SizeNESW.cur"
+Move		= "SizeAll.cur"
+Alternate	= "UpArrow.cur"
+Link		= "Hand.cur"

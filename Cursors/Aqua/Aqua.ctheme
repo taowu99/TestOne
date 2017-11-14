@@ -1,0 +1,20 @@
+[Software Credits]
+Software=XPstyle
+Author=Holer
+Email=holer@21cn.com
+
+[Cursors]
+Arrow=%ThemeDir%Arrow.cur
+AppStarting=%ThemeDir%busy.ani
+Crosshair=%ThemeDir%cross.cur
+Help=%ThemeDir%Help.cur
+IBeam=%ThemeDir%normal-Text Select.cur
+No=%ThemeDir%NO.cur
+SizeAll=%ThemeDir%SizeAll.cur
+SizeNESW=%ThemeDir%SizeNESW.cur
+SizeNS=%ThemeDir%SizeNS.cur
+SizeNWSE=%ThemeDir%SizeNWSE.cur
+SizeWE=%ThemeDir%SizeWE.cur
+UpArrow=%ThemeDir%UpArrow.cur
+Wait=%ThemeDir%wait.ani
+Hand=%ThemeDir%Hand.cur

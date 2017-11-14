@@ -1,0 +1,21 @@
+[Software Credits]
+Software=WinBeautician
+Author=YuYong
+Email=YuYong@21cn.com
+
+[Cursors]
+AppStarting=%ThemeDir%AppStarting.ani
+Arrow=%ThemeDir%Arrow.cur
+Crosshair=%ThemeDir%Cross.ani
+Hand=%ThemeDir%Hand.ani
+Handwriting=%ThemeDir%Handwriting.ani
+Help=%ThemeDir%Help.ani
+IBeam=%ThemeDir%IBeam.ani
+No=%ThemeDir%No.ani
+SizeAll=%ThemeDir%SizeAll.cur
+SizeNESW=%ThemeDir%SizeNESW.ani
+SizeNS=%ThemeDir%SizeNS.ani
+SizeNWSE=%ThemeDir%SizeNWSE.ani
+SizeWE=%ThemeDir%SizeWE.ani
+UpArrow=%ThemeDir%UpArrow.cur
+Wait=%ThemeDir%wait.ani
