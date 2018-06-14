@@ -1,0 +1,37 @@
+public class ClassTemp {
+  public List<Integer> splitIntoFibonacci(String S) {
+        List<Integer> res = new ArrayList<Integer>();
+        if (S.startsWith("0"))
+            return res;
+        Map<String, List<Integer>> mem = new HashMap();
+        for (int i=0; i<S.length()-2; ++i) {
+            for (int j=i+1; j<S.length()-1; ++j) {
+                int f1=Integer.parseInt(S.substring(0,i+1));
+                res.add(f1);
+                for (int k=j+1; k<S.length(); ++k) {
+                    final String f2s=S.substring(i+1,k);
+                    if (f2s.startsWith("0"))
+                        continue;
+                    int f2 = Integer.parseInt(f2s);
+                    res.add(f2);
+                    int r=k+1,end=0;
+                    while (r<S.length()) {
+                        int f3 = f1+f2;
+                        if (S.substring(r).startsWith(f3+"")) {
+                            res.add(f3);
+                            f1=f2;
+                            f2=f3;
+                            r=r+(f3+"").length();
+                        }
+                    }
+                    if (res.size()>2)
+                        return res;
+                    else
+                        res.remove(1);
+                }
+                res.remove(0);
+            }
+        }
+        return res;
+    }
+}
