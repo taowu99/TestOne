@@ -1,37 +1,60 @@
 public class ClassTemp {
+  //this is not a backtrack. but a permutation.  The sequence of 1st and 2nd numbers decides the how the list should be.  no repeat or reuse.
+  //for each combinine 1st and 2nd, calculate the next number and check if it is the beginning of next section of S.  Repeat until the end of S
+  //1. 0 is a legal number while 01 is not
+  //2. compare to max int
+  //3. reset list to origin, [first #], after each fail.  at some cases, f1 has been replaced.  So f1 is not good to use
+  
   public List<Integer> splitIntoFibonacci(String S) {
-        List<Integer> res = new ArrayList<Integer>();
-        if (S.startsWith("0"))
+        List<Integer> res = new ArrayList();
+        if (S.length()<3)
             return res;
-        Map<String, List<Integer>> mem = new HashMap();
-        for (int i=0; i<S.length()-2; ++i) {
-            for (int j=i+1; j<S.length()-1; ++j) {
-                int f1=Integer.parseInt(S.substring(0,i+1));
-                res.add(f1);
-                for (int k=j+1; k<S.length(); ++k) {
-                    final String f2s=S.substring(i+1,k);
-                    if (f2s.startsWith("0"))
-                        continue;
-                    int f2 = Integer.parseInt(f2s);
-                    res.add(f2);
-                    int r=k+1,end=0;
-                    while (r<S.length()) {
-                        int f3 = f1+f2;
-                        if (S.substring(r).startsWith(f3+"")) {
-                            res.add(f3);
-                            f1=f2;
-                            f2=f3;
-                            r=r+(f3+"").length();
-                        }
-                    }
-                    if (res.size()>2)
-                        return res;
-                    else
-                        res.remove(1);
+
+        for (int i = 0; i < S.length() / 2; ++i) {
+            final String f1s = S.substring(0, i + 1);
+            if (!isGoodInteger(f1s))
+                break;
+            int f1 = Integer.parseInt(f1s);
+            res.add(f1);
+            for (int k = i + 1; k < S.length() && (S.length()-k) >= Math.max(i,k-i); ++k) {
+                int r = k+1;
+                final String f2s = S.substring(i + 1, r);
+                if (!isGoodInteger(f2s))
+                    break;
+                int f2 = Integer.parseInt(f2s);
+                res.add(f2);
+                while (r < S.length()) {
+                    final int f3 = f1 + f2;
+                    final String f3s = Integer.toString(f3);
+                    if (S.substring(r).startsWith(f3s)) {
+                        res.add(f3);
+                        f1 = f2;
+                        f2 = f3;
+                        r += f3s.length();
+                    } else
+                        break;
                 }
-                res.remove(0);
+                if (r == S.length())
+                    return res;
+                else {
+                    res.clear();
+                    f1 = Integer.parseInt(f1s);
+                    res.add(f1);
+                }
             }
+            res.clear();
         }
         return res;
+    }
+
+    private boolean isGoodInteger(String s) {
+        try {
+            if (s.charAt(0)=='0' && s.length()!=1)
+                return false;
+            final String maxIntString = Integer.toString(Integer.MAX_VALUE);
+            return s.length() < maxIntString.length() || s.length() == maxIntString.length() && s.compareTo(maxIntString)<=0;
+        }catch (Exception e) {
+            return false;
+        }
     }
 }
